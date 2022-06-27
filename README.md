@@ -3,7 +3,7 @@
 This repo attempts to optimize the path taken by a CNC drill bit by using a greedy algorithm to solve the Traveling Salesman problem. 
 The goal is to minimize the distance the bit travels in the air.
 
-The command line utility parses a G-code file given as input and outputs a new G-code file encoding a more efficient path.
+The command line program parses a G-code file given as input and outputs a new G-code file encoding a more efficient path.
 
 #### Usage:
 ```shell
