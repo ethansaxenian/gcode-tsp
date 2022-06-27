@@ -1,7 +1,6 @@
 import sys
 
 from parse_gcode import GCODE_END, GCODE_START, get_lines_for_node, parse_gcode_file
-from plot_nodes import plot_nodes
 from tsp import tsp
 
 if len(sys.argv) < 3:
@@ -19,4 +18,6 @@ with open(sys.argv[2], "w") as file:
     file.write(GCODE_END)
 
 if len(sys.argv) == 4 and sys.argv[3] == "plot":
+    from plot_nodes import plot_nodes
+
     plot_nodes(path)
